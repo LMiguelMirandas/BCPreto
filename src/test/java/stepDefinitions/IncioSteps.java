@@ -218,6 +218,7 @@ public class IncioSteps {
         driver.findElement(By.id("formPasajero2-fecNacimiento")).click();
         driver.findElement(By.xpath("//*[@id='calendario_anio']"+"/option[text()='1995']")).click();
         driver.findElement(By.xpath("//*[@id='calendario_mes']"+"/option[text()='MARCH']")).click();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("//*[contains(@href,'26')]")));
         driver.findElement(By.xpath("//*[contains(@href,'26')]")).click();
         driver.findElement(By.xpath("//*[@id='formPasajero2-idPais']"+"/option[text()='Peru']")).click();
         driver.findElement(By.xpath("//*[@id='formPasajero2-idDocumentoIdentidad']"+"/option[text()='Identification Card']")).click();
@@ -259,7 +260,7 @@ public class IncioSteps {
         String totalSol2=driver.findElement(By.xpath("//*[@id='compra']/div/div[4]/div[1]/div[2]/span")).getText().substring(3);
 
         Assert.assertEquals(totalDol, totalDol2);
-        Assert.assertEquals(totalSol, totalSol2);
+        Assert.assertEquals(totalSol, totalSol2.replace(",",""));
 
 
     }
