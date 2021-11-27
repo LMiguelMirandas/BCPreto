@@ -12,11 +12,12 @@ Feature: Inicio
     And Validar monto de pago
     And Cerrar browser
 
+
   Examples:
     |varSoloIda|varDestino|varRuta|varTren|varFecSalida|varFecRegreso|
   # |  "Ignore"   |"Cusco"|"Puno > Cusco"|"PeruRail Titicaca Train"|"09/12/2021"|"Ignore"|
   ## |  "Ignore"   |"Cusco"|"Puno > Cusco"|"Andean Explorer, A Belmond Train"|"08/12/2021"|"Ignore"|
    ## |   "Ignore"    |"Cusco"|"Arequipa > Puno > Cusco"|"Ignore"|"27/11/2021"|"Ignore"|
-    |  "Ignore"     |"Machu Picchu"|"Cusco > Machu Picchu"|"Ignore"|"27/11/2021"|"29/11/2021"|
+    |  "Ignore"     |"Machu Picchu"|"Cusco > Machu Picchu"|"Ignore"|"29/11/2021"|"29/11/2021"|
 ##    |"SI"|"Machu Picchu"|"Cusco > Machu Picchu"|"Ignore"|"27/11/2021"|"Ignore"|
 

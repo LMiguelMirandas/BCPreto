@@ -165,8 +165,8 @@ public class IncioSteps {
     @Then("Seleccioanar Boletos")
     public void Seleccioanar_Boletos() {
 
-        driver.findElement(By.id("div_2020021674_12")).click();
-        String strCosto1=driver.findElement(By.xpath("//*[@id='div_2020021674_12']/div[4]/div")).getText();
+        driver.findElement(By.id("div_2020020946_12")).click();
+        String strCosto1=driver.findElement(By.xpath("//*[@id='div_2020020946_12']/div[4]/div")).getText();
 
         String precio[] = strCosto1.split("\n");
         GlobalVals.Dolares1= Double.parseDouble(precio[0].substring(3).trim());
